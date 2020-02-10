@@ -7,20 +7,20 @@ public class calc{
         System.out.println("Enter the Second operand:");
         float second = in.nextFloat();
         System.out.println("Enter the operation you wish to do:");
-        String operand = in.nextLine();       
-        if(operand == "+"){
+        String operand = in.next();       
+        if(operand.equals("+")){
             Addition add = new Addition(first, second);
             System.out.println(add.addtwonumbers(first, second));
         }
-        else if(operand == "-"){
+        else if(operand.equals("-")){
             Subtraction sub = new Subtraction(first, second);
             System.out.println(sub.subtwonumbers(first,second));
         }
-        else if(operand == "*"){
+        else if(operand.equals("*")){
             Multiply mul = new Multiply(first, second);
             System.out.println(mul.multwonumbers(first, second));
         }
-        else if(operand == "/"){
+        else if(operand.equals("/")){
             Division div = new Division(first, second);
             System.out.println(div.dividetwonumbers(first, second));
         }
