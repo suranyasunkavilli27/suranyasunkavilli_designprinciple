@@ -6,6 +6,12 @@ class Division{
         this.second = second;
     }
     public float dividetwonumbers(float a, float b){
-        return a + b;
+        float ans = 0;
+        try{
+            ans = (a/b)
+        }
+        catch{
+            System.out.println("Arithmetic Exception");
+        }
     }
 }
